@@ -1,0 +1,27 @@
+api: 2
+core: 8.x
+projects:
+  ctools:
+    type: module
+    version: 3.0-alpha23
+    subdir: contrib/layout
+  layout_plugin:
+    type: module
+    version: 1.0-alpha22
+    subdir: contrib/layout
+  panels:
+    type: module
+    version: 3.0-beta4
+    subdir: contrib/layout
+    patch:
+      # Allow other modules to disable the IPE based on custom logic
+      2667754: https://www.drupal.org/files/issues/2667754-3.patch
+  page_manager:
+    type: module
+    version: 1.0-alpha23
+    subdir: contrib/layout
+  panelizer:
+    type: module
+    version: 3.0-alpha2
+    subdir: contrib/layout
+

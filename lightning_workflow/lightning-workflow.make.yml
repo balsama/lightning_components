@@ -1,0 +1,25 @@
+api: 2
+core: 8.x
+projects:
+  scheduled_updates:
+    type: module
+    version: 1.0-alpha5
+    subdir: contrib/workflow
+    patch:
+      # Issue saving Schedule Update Type form
+      2674874: https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch
+  inline_entity_form:
+    type: module
+    version: 1.0-alpha4
+    subdir: contrib
+  workbench_moderation:
+    type: module
+    version: 1.0-beta1
+    subdir: contrib/workflow
+    patch:
+      # Provide logical access control for when IPE should be applied to moderated nodes
+      2668006: https://www.drupal.org/files/issues/2668006-2.patch
+      # Anonymous able to see "View" and "Latest Version" tabs
+      2672122: https://www.drupal.org/files/issues/anonymous_able_to_see-2672122-11.patch
+      # Allow a role to moderate but not to edit content
+      2652158: https://www.drupal.org/files/issues/allow_a_role_to-2652158-10.patch
