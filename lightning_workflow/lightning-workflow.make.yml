@@ -11,7 +11,7 @@ projects:
   inline_entity_form:
     type: module
     version: 1.0-alpha4
-    subdir: contrib
+    subdir: contrib/workflow
   workbench_moderation:
     type: module
     version: 1.0-beta1

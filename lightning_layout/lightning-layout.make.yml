@@ -24,4 +24,8 @@ projects:
     type: module
     version: 3.0-alpha2
     subdir: contrib/layout
+  metatag:
+    type: module
+    version: 1.0-beta4
+    subdir: contrib
 
